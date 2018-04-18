@@ -1,2 +1,94 @@
-<h1>StaticPages#index</h1>
-<p>Find me in app/views/static_pages/index.html.erb</p>
+<div class="header">
+  <div class="banner row">
+    <div class="logo col s6">
+      <%= image_tag 'yomeflogobig', height: 250 %>
+    </div>
+    <div class="brand-name col s6">
+      <h4 class="white-text">YOUNGMOMS EMPOWERMENT FOUNDATION GROUP <span class="logo-text">(YOMEF)</span></h4>
+    </div>
+  </div>
+  <div class="action">
+    <a class="waves-effect waves-light btn-large modal-trigger red" href="#modal1"><span class="white-text">Donate</span></a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <p>ACC NO:</p>
+        <p>YOUNGMOMS EMPOWERMENT FOUNDATION GROUP</p>
+        <p>CO-OPERATIVE BANK JUJA BRANCH</p>
+        <p>01134581825300</p>
+      </div>
+      <div class="modal-footer">
+        <div class="modal-mark">
+          <%= image_tag 'yomeflogo', height: 40 %>
+        </div>
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Standing a Second Chance</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="main">
+  <div class="intro">
+    <h3>About Us</h3>
+    <p>YOMEF is a non-profit organisation that rescues teenage mothers from vulnerable homes and OVC. It is located in Juja Sub-County in Kiambu County.</p>
+  </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card-panel blue">
+          <h5 class="white-text">Vision</h5>
+          <span class="white-text">Our vision is to empower young mothers by reducing
+             stigma and marginalization attached to teenage parenthood within our
+             community. We intend to educate them on their sexual and reproductive
+             health so as to curb the early pregnacies and risks associated with
+             the vice. We also encourage them to resume schooling after offering
+             sufficient counseling and constantly remind them about the dangers
+             involved in teenage parenting
+          </span>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card-panel blue">
+          <h5 class="white-text">Mission</h5>
+          <span class="white-text">Our mission is to mitigate the impact of HIV/AIDS
+            and abortion at the grassroot level through community empowerment. The
+            group offers provision of counseling the young mothers, enlightenign
+            them on nutrition, psychological support and protection, micro-finance
+            education, voluntary savings and loan trainings as we stipulate the
+            vitality of education to empower them. We also inend to endow them
+            with basic skills in artwork like bead-work, tie and dye and weaving.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="justification">
+      <h4>Our Objectives</h4>
+      <p>The main objective is to break the cycle of young mithers getting more
+         children while in the process of trying to fend for their young ones,
+         putting themselves in the position to of more unwanted pregnancies,
+         abortions, health risks and even early marriages of convinience. This
+         girls need help and their voices echoed so as to get back on their feet by:
+         <ol>
+           <li>Proper counseling and arming them the life skills will help them rise over their delicate situations</li>
+           <li>Empowering their guardians financially will enable them to fend for their babies as they resume schooling</li>
+           <li>Empower with practical skills those who may be unable to resume normal schooling.</li>
+           <li>Offer entreprenurial skills and training to enable them to sustain themselves in the long run.</li>
+         </ol>
+       </p>
+    </div>
+    <div class="project-area">
+      <h4>Project Area</h4>
+      <p>The project area is in Juja whereby we have targeted five girls from every
+        ward namely Witeithie, Theta, Kalimoni, Juja and Murera. The questionnaire
+        and the sampling is done on girls aged 17years and below who have children
+        and are from vulnerable families. The data collection is done by the social
+        workers representing every ward which they are well conversant with.
+      </p>
+    </div>
+
+</div>
+<script>
+  $(document).ready(function(){
+   $('.modal').modal();
+  });
+</script>

@@ -3,12 +3,53 @@
   <head>
     <title>YOMEF</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <nav class="blue">
+       <div class="nav-wrapper">
+         <a href="/" class="brand-logo">YOMEF</a>
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+           <li><%= link_to 'About', static_pages_about_path %></li>
+           <li><a href="badges.html">Testimonials</a></li>
+           <li><%= link_to 'Contuct Us', static_pages_contact_path %></li>
+         </ul>
+       </div>
+     </nav>
   </head>
 
   <body>
     <%= yield %>
   </body>
+  <footer class="page-footer blue">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Susan N. Waititu</h5>
+                <p class="grey-text text-lighten-4">Director</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Cell: 0712 382 202</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Office: 0723 827 686</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Email: yomef2015@outlook.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright YOMEF
+            <a class="grey-text text-lighten-4 right" href="https://kiburei.github.io" target="_blank">Kiburei</a>
+            </div>
+          </div>
+        </footer>
+
 </html>
