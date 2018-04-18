@@ -1,21 +1,25 @@
-<p id="notice"><%= notice %></p>
-
-<div class="row">
-  <% @blogs.each do |blog| %>
-     <div class="col s12 m3">
-       <div class="card">
-         <div class="card-image">
-           <%= image_tag 'bg' %>
-           <span class="card-title"><%= blog.title %></span>
-         </div>
-         <div class="card-content">
-           <p><%= blog.content %></p>
-         </div>
-         <div class="card-action">
-           <a href="#">Read More</a>
+<div class="main">
+  <p id="notice"><%= notice %></p>
+  <div class="add-blog">
+    <a class="btn-floating btn-large waves-effect waves-light red" href="blogs/new"><i class="material-icons">add</i></a>
+  </div>
+  <div class="row">
+    <% @blogs.each do |blog| %>
+       <div class="col s12 m3">
+         <div class="card">
+           <div class="card-image">
+             <%= image_tag 'bg' %>
+             <span class="card-title"><%= blog.title %></span>
+           </div>
+           <div class="card-content">
+             <p><%= blog.content.first(150) %></p>
+           </div>
+           <div class="card-action">
+             <%= link_to 'Read More', blog_path(blog) %>
+           </div>
          </div>
        </div>
-     </div>
-  <% end %>
+    <% end %>
+  </div>
+
 </div>
-<%= link_to 'New Blog', new_blog_path %>

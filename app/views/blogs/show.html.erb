@@ -1,14 +1,13 @@
-<p id="notice"><%= notice %></p>
+<div class="main">
+  <p id="notice"><%= notice %></p>
+  <div class="title">
+    <h5><%= @blog.title %></h5>
+  </div>
+  <div class="content">
+    <%= @blog.content %>
+  </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+  <%= link_to 'Edit', edit_blog_path(@blog) %> |
+  <%= link_to 'Back', blogs_path %>
 
-<p>
-  <strong>Content:</strong>
-  <%= @blog.content %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+</div>

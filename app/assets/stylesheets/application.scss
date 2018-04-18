@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @import 'materialize';
+@import 'materialize';
 
 .blue {
   color: #00A7E8;
@@ -23,30 +23,40 @@
   color: #EA1E26;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #EA1E26;
 }
 
 nav {
   padding: 15px;
 }
+
 .banner {
   align-items: center;
   justify-content: center;
   padding: 50px;
 }
+
 .logo {
   padding: 15px;
   margin-left: 10px;
 }
+
 .brand-name {
-  background:  #00A7E8;
+  background: #00A7E8;
   box-shadow: 2px 1px 5px 2px;
   border-radius: 10px;
 }
+
 .action {
   text-align: center;
 }
+
 .header {
   padding: 10px;
   background-image: url('bg');
@@ -54,19 +64,37 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .main {
   padding: 15px;
 }
+
 .logo-text {
   color: #EA1E26;
 }
+
 .about {
-	padding: 15px;
+  padding: 15px;
 }
+
 .modal {
   background-color: #EA1E26;
   color: white;
 }
+
 .modal-mark {
   float: left;
 }
+
+.add-blog {
+  float: right;
+}
+.title {
+  text-align: center;
+}
+.content {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fdf5e8;
+  text-align: justify;
+  }
