@@ -1,7 +1,12 @@
 <div class="main">
   <p id="notice"><%= notice %></p>
   <div class="add-blog">
-    <a class="btn-floating btn-large waves-effect waves-light red" href="blogs/new"><i class="material-icons">add</i></a>
+    <% if admin_signed_in? %>
+      <a class="btn-floating btn-large waves-effect waves-light red" href="blogs/new"><i class="material-icons">add</i></a>
+      <a class="btn-floating btn-large waves-effect waves-light red" href="/admins/sign_out" data-method="delete"><i class="material-icons">exit_to_app</i></a>
+    <% else %>
+      <a class="btn-floating btn-large waves-effect waves-light red" href="/admins/sign_in"><i class="material-icons">person</i></a>
+    <% end %>
   </div>
   <div class="row">
     <% @blogs.each do |blog| %>

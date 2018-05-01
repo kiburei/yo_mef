@@ -14,7 +14,9 @@
  *= require_self
  */
 @import 'materialize';
-
+body {
+  background-image: url('whirlpool');
+}
 .blue {
   color: #00A7E8;
 }
@@ -67,6 +69,8 @@ nav {
 
 .main {
   padding: 15px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .logo-text {
@@ -97,4 +101,8 @@ nav {
   border-radius: 10px;
   background-color: #fdf5e8;
   text-align: justify;
+  }
+  .admin_form {
+    padding-left: 500px;
+    padding-right: 500px;
   }
