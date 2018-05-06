@@ -4,7 +4,7 @@
     <h5><%= @blog.title %></h5>
   </div>
   <div class="content">
-    <%= @blog.content %>
+    <%= @blog.content.html_safe %>
   </div>
 <% if admin_signed_in? %>
   <a class="btn-floating btn-large waves-effect waves-light red" href="/blogs/<%= @blog.id %>/edit"><i class="material-icons">create</i></a>

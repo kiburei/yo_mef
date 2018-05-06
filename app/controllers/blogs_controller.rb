@@ -21,11 +21,11 @@ class BlogsController < ApplicationController
   # GET /blogs/1/edit
   def edit
   end
-
   # POST /blogs
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
+    @blog.admin_id = current_admin.id
 
     respond_to do |format|
       if @blog.save
