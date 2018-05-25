@@ -91,6 +91,7 @@ nav {
 }
 
 .add-blog {
+  padding: 0px;
   float: right;
 }
 .title {
@@ -105,4 +106,7 @@ nav {
   .admin_form {
     padding-left: 500px;
     padding-right: 500px;
+  }
+  .transparent {
+    opacity: 0.5;
   }

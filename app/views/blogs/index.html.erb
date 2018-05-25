@@ -9,21 +9,23 @@
     <% end %>
   </div>
   <div class="row">
-    <% @blogs.each do |blog| %>
-       <div class="col s12 m3">
-         <div class="card">
-           <div class="card-image">
-             <%= image_tag 'bg' %>
-             <span class="card-title"><%= blog.title %></span>
-           </div>
-           <div class="card-content">
-             <p><%= blog.content.first(150) %></p>
-           </div>
-           <div class="card-action">
-             <%= link_to 'Read More', blog_path(blog) %>
+    <% if @blogs.any? %>
+      <% @blogs.each do |blog| %>
+         <div class="col s12 m3">
+           <div class="card">
+             <div class="card-image">
+               <%= image_tag 'bg' %>
+               <span class="card-title"><%= blog.title %></span>
+             </div>
+             <div class="card-content">
+               <p><%= blog.content.first(150) %></p>
+             </div>
+             <div class="card-action">
+               <%= link_to 'Read More', blog_path(blog) %>
+             </div>
            </div>
          </div>
-       </div>
+      <% end %>
     <% end %>
   </div>
 
