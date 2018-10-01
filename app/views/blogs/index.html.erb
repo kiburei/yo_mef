@@ -18,7 +18,7 @@
                <span class="card-title"><%= blog.title %></span>
              </div>
              <div class="card-content">
-               <p><%= blog.content.first(150) %></p>
+               <p><%= blog.content.first(150).html_safe %></p>
              </div>
              <div class="card-action">
                <%= link_to 'Read More', blog_path(blog) %>
